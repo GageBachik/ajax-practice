@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	a#random(href='#') Get Random Numbers <br>
+	input(type='text' name='number' placeholder='Enter a number')
+	button#submitANumber Add a Number
+	h3#total Total: #{total}
+	ul#numbers
+
+block scripts
+	script(src='/main.js')
